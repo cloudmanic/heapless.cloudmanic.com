@@ -1,0 +1,53 @@
+<section class="file-viewer">
+  <a href="/heap/{{ back_display }}/{{ file.FilesStatus }}" class="l-back th-right">Back to The Heap</a>
+
+  <h2 ng-bind="file.FilesName"></h2>
+
+  <p class="file-options th-cl">
+  	<span class="th-left">Date Uploaded: <span ng-bind="file.FilesCreatedAt | dateToISO | date:'shortDate'"></span></span>
+  	<span class="th-left">File type: <span ng-bind="file.Type | uppercase"></span></span>
+  	<span class="th-left">Added by: <span ng-bind="file.UsersFirstName"></span> <span ng-bind="file.UsersLastName"></span></span>
+  	<span class="th-right">
+  		<a href="#" class="send-link th-left" data-id="{{ file.FilesId }}" ng-show="(file.FilesStatus == 'current')">Send the file to</a> 
+  		<!-- <a href="#" class="download-link">Download file</a>  -->
+  		<a href="#" class="ico-trash" ng-show="(file.FilesStatus == 'current')">Delete file</a>
+  	</span>
+  </p>
+
+  <div class="th-cl">
+  	<div class="full th-left">
+  		<img ng-src="{{ file_current }}" alt="{{ file.FilesName }}" width="650" img-load img-loader="img_loader" ng-hide="img_loader" />
+  	</div>
+  	<div class="thumbs th-right">
+  		<nav>
+  			<a href="#" class="prev th-notext" ng-class="{ 'disabled': (file_current_page == 1) }" ng-click="page_prev()">previous</a>
+  			<span>{{ file_current_page }} / {{ file.Pages.length }}</span>
+  			<a href="#" class="next th-notext" ng-class="{ 'disabled': (file_current_page == file.Pages.length) }" ng-click="page_next()">next</a>
+  		</nav>
+
+  		<ul>
+  			<li ng-repeat="row in file.Pages" ng-class="{ 'current': (file_current == row.Url) }">
+  				<a href="#" ng-click="page_click($index)">
+  					<img ng-src="{{ row.ThumbUrl }}" alt="Page #{{ $index }}" width="150" />
+  				</a>
+  			</li>
+  			
+
+<!--
+  			<li>
+  				<div class="th-small-placeholder">
+  					<p class="th-spinner">Loading thumbnail</p>
+  				</div>
+  			</li>
+-->
+
+  		</ul>
+  	</div>
+  </div>
+
+  <nav>
+  	<a href="#" class="prev th-notext" ng-class="{ 'disabled': (file_current_page == 1) }" ng-click="page_prev()">previous</a>
+  	<span>{{ file_current_page }} / {{ file.Pages.length }}</span>
+  	<a href="#" class="next th-notext" ng-class="{ 'disabled': (file_current_page == file.Pages.length) }" ng-click="page_next()">next</a>
+  </nav>
+</section>

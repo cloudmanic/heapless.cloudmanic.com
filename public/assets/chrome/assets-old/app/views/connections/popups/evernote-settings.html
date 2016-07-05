@@ -1,0 +1,33 @@
+<div class="connection-setup" ng-controller="controllers.connections.evernote_settings">
+	<h2 class="logo evernote th-notext">Evernote</h2>
+
+	<div class="th-right instructions">
+		<p>Before we can connect to your Evernote account you should do the following:</p>
+
+		<ol>
+			<li>Name this connection.</li>
+			<li>Click "Connect Evernote".</li>
+			<li>Authenticate with Evernote.</li>
+		</ol>
+	</div>
+
+	<h3>Your Evernote Connection Name</h3>
+
+	<form ng-submit="submit()">
+		<div class="th-field-row th-mg-b-15 th-wid-300">
+			<input type="text" class="th-field th-mg-t-5" ng-model="connection.ConnectionsName" placeholder="My Business Evernote" />
+		</div>
+
+		<div class="error-row th-wid-300" ng-show="is_error">
+			<p>A connection name is required.</p>
+		</div>
+
+		<div class="th-cl th-mg-t-20">
+			<a href="#" class="th-left" ng-click="submit()">
+				<img src="/assets/app/styles/images/connect_evernote_button.png" width="200" />
+			</a>
+			<!-- <a href="#" class="th-button th-left th-round-20">Connect</a> -->
+			<a href="#" class="close th-left th-mg-l-20" onclick="$.colorbox.close(); return false;">Cancel</a>
+		</div>
+	</form>
+</div>

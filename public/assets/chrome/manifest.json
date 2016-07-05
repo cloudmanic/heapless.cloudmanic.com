@@ -1,0 +1,24 @@
+{
+  "name": "Heapless",
+  
+  "description": "You know that pile of paper that grows on your desk every month until finally you can't take it anymore and you spend a day doing paper work? Heapless replaces those heaps of paper with a digital solution.",
+  
+  "version": "1.0.0",
+  
+  "manifest_version": 2,
+  
+	"minimum_chrome_version": "23",
+  
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  
+	"permissions": [
+		"http://heapless.cloudmanic.dev/",
+		"https://heapless.cloudmanic.com/"		
+  ], 
+  
+  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+}

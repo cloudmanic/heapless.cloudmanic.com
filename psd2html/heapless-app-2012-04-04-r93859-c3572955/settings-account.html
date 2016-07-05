@@ -1,0 +1,122 @@
+<!--#include virtual="ssi-header.shtml" -->
+		<nav class="top">
+			<form action="#" method="post" id="upload" class="th-left">
+				<span class="th-button th-round-20">Upload Now <input type="file" /></span>
+			</form>
+
+			<form action="#" method="post" id="search" class="th-right">
+				<input type="text" class="search-field" placeholder="Search your files" />
+				<input type="submit" class="search-button th-notext" value="Search" />
+			</form>
+		</nav>
+		<section id="main" class="th-cl">
+			<section id="sidebar" class="th-left">
+				<nav>
+					<a href="#"><span class="icon ico-heap"></span> The Heap <span class="red circle">22</span></a>
+					<a href="#"><span class="icon ico-processed"></span> Processed <span class="green circle">5</span></a>
+					<a href="#"><span class="icon ico-trash"></span> Trash <span class="grey circle">1</span></a>
+				</nav>
+
+				<div class="advertisement">
+					<h6>Advertisement</h6>
+					<div class="container">
+						<a href="#"><img src="css/images/advertisement.jpg" alt="" /></a>
+						<span class="ico-remove th-notext">Remove this ad</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="content" class="th-right">
+				<section class="settings">
+					<h1 class="th-h1 th-mg-b-15">Settings</h1>
+
+					<nav>
+						<a href="#">Users</a>
+						<a href="#" class="active">Account</a>
+						<a href="#">Billing History</a>
+					</nav>
+
+					<div class="account th-cl">
+						<div class="half th-left">
+							<div class="plans">
+								<h3 class="th-h3 th-mg-b-20">Change Your Account Plan</h3>
+
+								<div class="table-container">
+									<table>
+										<tr>
+											<th>
+												<h4>Free Account</h4>
+												<p class="price"><strong>$0</strong> yearly</p>
+												<a href="popups/downgrade.html" class="btn-downgrade" data-type="popup">Downgrade</a>
+											</th>
+											<th class="current">
+												<h4>Plus Account</h4>
+												<p class="price"><strong>$29</strong> yearly</p>
+												<span class="current-plan">Current Plan</span>
+											</th>
+										</tr>
+										<tr>
+											<td>50 Megs of Storage</td>
+											<td>10 Gigs of Storage</td>
+										</tr>
+										<tr>
+											<td>10 Uploads/Month</td>
+											<td>Unlimited Uploads</td>
+										</tr>
+										<tr>
+											<td>1 User</td>
+											<td>Unlimited</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="half th-right">
+							<div class="acc-payment">
+								<h3 class="th-h3 th-mg-b-20">Payment Method</h3>
+
+								<p class="th-p th-mg-b-15">You are currently subscribed using the following credit card. If you need to update your card on file please use the controls below. Your new card will be charged during the next billing cycle.</p>
+
+								<div class="th-right">
+									<span class="accepted-cards"></span>
+
+									<span>We accept Visa, MasterCard, <br /> Discover and American Express.</span>
+								</div>
+
+								<ul class="th-mg-b-15">
+									<li><span class="th-left">Credit Card Type:</span> <span class="icon visa-icon th-notext">VISA</span> Primary</li>
+									<li><span class="th-left">Card Number:</span> 455632008607</li>
+									<li><span class="th-left">Zip Code:</span> 11470</li>
+									<li><span class="th-left">Expiration Date:</span> 12/2014</li>
+								</ul>
+
+								<p class="th-p"><a href="#">Edit Credit Card Information</a></p>
+							</div>
+							<div class="acc-name">
+								<h3 class="th-h3 th-mg-b-20">Change Account Name</h3>
+								<p class="th-p th-mg-b-15">You can change your account name by updating the field below and clicking the change button.</p>
+
+								<form action="#" method="post">
+									<div class="th-field-row th-wid-325 th-mg-b-20">
+										<input type="text" class="th-field" value="Harnods" />
+									</div>
+									<a href="#" class="th-button th-round-20" onclick="add_spinner($(this)); return false;">Change</a>
+								</form>
+							</div>
+
+							<div class="acc-delete">
+								<h3 class="th-h3 th-mg-b-20">Delete Account</h3>
+								<p class="th-p th-mg-b-15">Deleting your account is NOT REVERSIBLE and will lead to the removal of all your data from Heapless.</p>
+
+								<a href="#" class="th-button th-round-20 th-mg-b-20" onclick="add_spinner($(this)); return false;">Delete Account</a>
+
+								<p class="th-p th-mg-b-20">Sometimes it is nice just to start over. By clicking the button below you will clear your entire account of all data and restore it to the state when you first signed up. All data will be deleted forever.</p>
+								<p class="th-p"><a href="#">Click here to clear all account data.</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+<!--#include virtual="ssi-footer.shtml" -->

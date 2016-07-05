@@ -1,0 +1,47 @@
+<section class="the-heap">
+  <div class="view-options th-right">
+  	<a href="/heap/thumbs/{{ folder }}" class="view-thumbs th-left th-notext">Thumbnails</a>
+  	<a href="/heap/list/{{ folder }}" class="view-list th-left th-notext active">List</a>
+  </div>
+
+  <h2>
+  	<span class="th-left" ng-show="(folder == 'current')">The Heap</span> 
+  	<span class="th-left" ng-show="(folder == 'processing')">Pending</span> 
+  	<span class="th-left" ng-show="(folder == 'processed')">Processed</span> 
+  	<span class="th-left" ng-show="(folder == 'trash')">Trash</span> 
+  	<a href="#" class="send-link th-left">Send selected file(s) to</a> 
+  	<a href="#" class="delete-link th-left">Delete selected file(s)</a>
+  </h2>
+
+  <div class="heap-list">
+  	<form action="" method="post">
+  		<ul>
+  			<li ng-repeat="row in files | filter:search">
+  				<span ng-show="(row.FilesStatus == 'current')">
+  					<label class="th-checklabel th-left">
+  						<input type="checkbox" class="th-checkbox" value="" /> &nbsp;
+  					</label>
+  				</span>
+  				
+  				<span class="image-icon icon th-left"></span>
+  				<a ng-href="/heap/view/{{ row.FilesId }}?display=list" class="file-name blue-link th-left">{{ row.FilesName | truncate:40 }}</a>
+  				
+  				<span class="upload-date th-left">Uploaded: {{ row.FilesCreatedAt | dateToISO | date:'shortDate' }}</span>
+  				
+  				<span class="added-by th-left">
+  					Added  by: <span ng-bind="row.UsersFirstName"></span> <span ng-bind="row.UsersLastName"></span>
+  				</span>
+  				
+  				<span ng-show="(row.FilesStatus == 'current')">
+  					<a href="#" class="send-link th-left" data-id="{{ row.FilesId }}">Send the file to</a>
+  					<span class="ico-trash th-right th-notext" ng-click="toast(row)">Trash</span>
+  				</span>
+  				
+  				<div class="added-by th-left th-mg-l-20" ng-show="(row.FilesStatus == 'trash')">
+  					<a href="#" class="blue-link" ng-click="restore(row)">Restore</a>
+  				</div>
+  			</li>
+  		</ul>
+  	</form>
+  </div>
+</section>

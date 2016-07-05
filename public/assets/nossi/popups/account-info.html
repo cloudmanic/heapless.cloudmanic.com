@@ -1,0 +1,38 @@
+<div class="connection-setup">
+	<h2 class="logo skyclerk th-notext">SkyClerk</h2>
+
+	<div class="th-right instructions">
+		<p>Before you can connect to your Skyclerk account, you must enable the Skyclerk API by following these steps:</p>
+
+		<ol>
+			<li>Log in to your Skyclerk account.</li>
+			<li>Go to My Settings page.</li>
+			<li>Generate the API Key.</li>
+		</ol>
+	</div>
+
+	<h3>Enter your Skyclerk Account Info</h3>
+
+	<form action="" method="post">
+		<div class="th-field-row th-mg-b-15 th-wid-300">
+			<label class="th-field-head">Connection Name</label>
+			<input type="text" class="th-field" value="" />
+		</div>
+		<div class="th-field-row th-mg-b-15 th-wid-300">
+			<label class="th-field-head">API Token</label>
+			<input type="text" class="th-field" value="" />
+		</div>
+		<div class="th-field-row th-mg-b-20 th-wid-300">
+			<label class="th-field-head">Skyclerk URL</label>
+			<input type="text" class="th-field" value="" />
+			<span class="th-helper">Please include https://</span>
+		</div>
+		<div class="error-row th-wid-300">
+			<p>Whoops! Error message here</p>
+		</div>
+		<div class="th-cl">
+			<a href="#" class="th-button th-left th-round-20" onclick="demo_connect(); return false;">Connect</a>
+			<a href="#" class="close th-left th-mg-l-20" onclick="$.colorbox.close(); return false;">Cancel</a>
+		</div>
+	</form>
+</div>

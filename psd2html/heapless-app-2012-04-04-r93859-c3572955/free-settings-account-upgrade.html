@@ -1,0 +1,124 @@
+<!--#include virtual="ssi-header.shtml" -->
+		<nav class="top">
+			<form action="#" method="post" id="upload" class="th-left">
+				<span class="th-button th-round-20">Upload Now <input type="file" /></span>
+			</form>
+
+			<form action="#" method="post" id="search" class="th-right">
+				<input type="text" class="search-field" placeholder="Search your files" />
+				<input type="submit" class="search-button th-notext" value="Search" />
+			</form>
+		</nav>
+		<section id="main" class="th-cl">
+			<section id="sidebar" class="th-left">
+				<nav>
+					<a href="#"><span class="icon ico-heap"></span> The Heap <span class="red circle">22</span></a>
+					<a href="#"><span class="icon ico-processed"></span> Processed <span class="green circle">5</span></a>
+					<a href="#"><span class="icon ico-trash"></span> Trash <span class="grey circle">1</span></a>
+				</nav>
+
+				<div class="advertisement">
+					<h6>Advertisement</h6>
+					<div class="container">
+						<a href="#"><img src="css/images/advertisement.jpg" alt="" /></a>
+						<span class="ico-remove th-notext">Remove this ad</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="content" class="th-right">
+				<section class="settings">
+					<h1 class="th-h1 th-mg-b-15">Settings</h1>
+
+					<nav>
+						<a href="#">Users</a>
+						<a href="#" class="active">Account</a>
+					</nav>
+
+					<div class="upgrade">
+						<form action="#" method="post">
+							<h3 class="th-h3 th-mg-b-20">Upgrade to Plus Account</h3>
+							
+							<div class="th-cl">
+								<div class="half th-left th-wid-430">
+									<h3 class="th-h3 th-mg-b-10">Mailing Information</h3>
+
+									<div class="th-field-row th-wid-430 th-mg-b-10">
+										<label class="th-field-head th-pd-b-5">Address</label>
+										<input type="text" class="th-field" value="" />
+									</div>
+
+									<div class="th-cl">
+										<div class="th-field-row th-wid-150 th-left th-mg-r-15 th-mg-b-10">
+											<label class="th-field-head th-pd-b-5">City</label>
+											<input type="text" class="th-field" value="" />
+										</div>
+										<div class="th-field-row th-wid-125 th-left th-mg-b-10">
+											<label class="th-field-head th-pd-b-5">State</label>
+											<input type="text" class="th-field" value="" />
+										</div>
+										<div class="th-field-row th-wid-125 th-right th-mg-b-10">
+											<label class="th-field-head th-pd-b-5">Zip / Postal Code</label>
+											<input type="text" class="th-field" value="" />
+										</div>
+									</div>
+
+									<div class="th-field-row th-wid-430 th-mg-b-10">
+										<label class="th-field-head th-pd-b-5">Country</label>
+										<input type="text" class="th-field" value="" />
+									</div>
+
+									<div class="th-field-row th-wid-430 th-mg-b-15">
+										<label class="th-field-head th-pd-b-5">Phone Number</label>
+										<input type="text" class="th-field" value="" />
+									</div>
+								</div>
+								<div class="half th-right th-wid-430">
+									<h3 class="th-h3 th-mg-b-10">Credit Card Information</h3>
+
+									<div class="th-field-row th-wid-430 th-mg-b-10">
+										<label class="th-field-head th-pd-b-5">Card Number</label>
+										<input type="text" class="th-field" value="" />
+
+										<div class="error-tooltip">
+											<strong>Required.</strong> This field can't be left empty
+										</div>
+									</div>
+
+									<div class="th-field-row th-wid-150 th-mg-b-10">
+										<label class="th-field-head th-pd-b-5">Expiration Date</label>
+										<input type="text" class="th-field" value="" />
+										<span class="side-text">MMYY</span>
+									</div>
+
+									<div class="th-field-row th-wid-430 th-mg-b-10">
+										<label class="th-field-head th-pd-b-5">Name On Card</label>
+										<input type="text" class="th-field" value="" />
+									</div>
+
+									<div class="th-field-row th-wid-150 th-mg-b-15">
+										<label class="th-field-head th-pd-b-5">Card Security Code</label>
+										<input type="text" class="th-field" value="" />
+										<span class="side-text" data-tooltip="CCV is a 3 Digit Card Verification Number printed on the back of your card." data-class="th-wid-225">What is this?</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="bottom">
+								<label class="th-checklabel"><input type="checkbox" class="th-checkbox" value="" /> I agree to the <a href="#">Terms of Service</a></label>
+
+								<a href="#" class="th-button th-left th-round-20 th-mg-t-20 th-mg-r-15" onclick="demo_upgrade(); return false;">Upgrade</a>
+								<a href="#" class="l-cancel th-left th-mg-t-20">Cancel</a>
+								<div class="th-cl"></div>
+							</div>
+
+							<div class="error-row th-mg-t-20">
+								<p>Whoops! Something goes wrong.</p>
+							</div>
+						</form>
+					</div>
+				</section>
+			</section>
+		</section>
+
+<!--#include virtual="ssi-footer.shtml" -->

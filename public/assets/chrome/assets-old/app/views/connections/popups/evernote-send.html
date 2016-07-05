@@ -1,0 +1,65 @@
+<div class="connect-evernote connect-popup" ng-controller="controllers.send.evernote">
+	<h2 class="th-notext">Evernote</h2>
+
+	<form action="" method="post" class="th-cl" ng-submit="save()">
+		<div class="files">
+			<ul>
+				<li>
+					<img ng-src="{{ file.ThumbUrl }}" alt="" width="59" height="59" />
+					<h3 ng-bind="file.FilesName"></h3>
+					<p>
+						<span class="th-left">
+							Date Uploaded: 
+							<span ng-bind="file.FilesCreatedAt | dateToISO | date:'shortDate'"></span>
+						</span>
+						 
+						<span class="th-left">
+							File type: 
+							<span ng-bind="file.Type | uppercase"></span>
+						</span> 
+						
+						<span class="th-left">
+							Added by: 
+							<span ng-bind="file.UsersFirstName"></span> 
+							<span ng-bind="file.UsersLastName"></span>
+						</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="folders">
+		
+			<div class="th-field-row th-mg-b-20 th-wid-560" ng-class="{ 'th-error': errors.FilesTitle }">
+				<label class="th-field-head th-pd-b-10">Title</label>
+				<input type="text" class="th-field" ng-model="fields.FilesTitle" />
+				<p class="th-error-text" ng-bind="errors.FilesTitle"></p>
+			</div>
+			
+			<div class="th-field-row th-mg-b-20" ng-class="{ 'th-error': errors.FilesNotebook }">
+				<label class="th-field-head th-pd-b-10">Notebook</label>
+
+				<select class="th-wid-250" ng-hide="fields.FilesNotebook">
+					<option>Loading...</option>
+				</select>
+				
+				<select class="th-wid-250" ng-show="fields.FilesNotebook" ng-model="fields.FilesNotebook" ng-options="row.guid as row.full for row in notebooks"></select>
+				
+				<p class="th-error-text" ng-bind="errors.FilesNotebook"></p>
+			</div>
+			
+			<div class="th-field-row th-mg-b-20 th-wid-560">
+				<label class="th-field-head th-pd-b-10">Tags</label>
+				<input type="text" class="th-field" data-tags="tags_demo" placeholder="tag #1, tag #2, tag #2" ng-model="fields.FilesTags" />
+			</div>
+			
+			<div class="th-field-row th-mg-b-20 th-pd-b-20 th-wid-560">
+				<label class="th-field-head th-pd-b-10">Description</label>
+				<textarea class="th-field th-hei-100" ng-model="fields.FilesNote"></textarea>
+			</div>
+		</div>
+
+		<a href="#" class="th-button th-round-20 th-left th-mg-r-20 th-mg-l-30" ng-click="save()" ng-bind="save_btn"></a>
+		<a href="#" class="l-cancel th-left" onclick="$.colorbox.close(); return false;">Cancel</a>
+	</form>
+</div>

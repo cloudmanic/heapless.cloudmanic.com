@@ -1,0 +1,46 @@
+<section class="connections">
+  <h2>Manage Connections</h2>
+
+  <div class="items th-left">
+  	<p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
+
+  	<ul>
+  		<!-- <li><a href="popups/connect-skyclerk.html" data-type="popup"><span class="icon skyclerk"></span> Connect to Skyclerk</a></li> -->
+   				<li><a href="popups/connect-dropbox.html" data-type="popup"><span class="icon dropbox"></span> Connect to Dropbox</a></li> -->
+  		<li>
+  			<a href="#" colorbox="/assets/app/views/connections/popups/evernote-settings.html">
+  				<span class="icon evernote"></span> 
+  				Connect to Evernote
+  			</a>
+  		</li>
+
+<!--
+  		<li><a href="popups/connect-googledocs.html" data-type="popup"><span class="icon googledocs"></span> Connect to Google Docs</a></li>
+  		<li><a href="popups/connect-freshbooks.html" data-type="popup"><span class="icon freshbooks"></span> Connect to FreshBooks</a></li>
+  		<li><a href="popups/connect-grapeshare.html" data-type="popup"><span class="icon grapeshare"></span> Connect to Grapeshare</a></li>
+  		<li><a href="popups/connect-rackspace.html" data-type="popup"><span class="icon rackspace"></span> Connect to Rackspace</a></li>
+  		<li><a href="popups/connect-amazon.html" data-type="popup"><span class="icon amazon"></span> Connect to Amazon S3</a></li>
+  		<li><a href="popups/connect-shoeboxed.html" data-type="popup"><span class="icon shoeboxed"></span> Connect to Shoeboxed</a></li>
+-->
+
+  	</ul>
+  </div>
+
+  <div class="my-connections th-right">
+  	<h3>My Connections</h3>
+
+  	<ul>
+  		<li ng-repeat="row in connections">
+  			<div class="logo th-left">
+  				<span class="{{ row.ConnectionsType }}"></span>
+  			</div>
+  			<p class="name th-left">{{ row.ConnectionsName }}</p>
+  			<a href="#" data-id="{{ row.ConnectionsId }}" colorbox="/assets/app/views/connections/popups/{{ row.ConnectionsType }}-settings.html" class="settings th-left">
+  				Settings
+  			</a>
+  			<a href="#" class="ico-trash th-right th-notext" ng-click="delete_con($index)">Trash</a>
+  		</li>
+  	</ul>
+  </div>
+  
+</section>

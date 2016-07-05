@@ -1,0 +1,43 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+body {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Helvetica, arial, sans-serif;
+    color: #fff;
+    background: #424e5a;
+    min-width: 100%;
+    padding-top: 102px; 
+}
+
+a { color: #0252aa; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+h2 { font-size: 24px; line-height: 40px; padding-bottom: 10px; }
+h3 { font-size: 16px; line-height: 18px; font-weight: normal; padding-bottom: 19px; }
+
+input, textarea, select { font-size: 12px; font-family: Helvetica, arial, sans-serif; }
+textarea { overflow: auto; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+.shell { width: 940px; margin: 0 auto; }
+
+#header { float: left; display: inline; padding: 49px 0 0 74px; width: 462px; }
+
+h1#logo { width: 148px; height: 36px; padding-bottom: 37px; }
+h1#logo a { display: block; height: 36px; background: url(images/logo.png); }
+
+#signup .input-field { display:block; width: 462px; height: 36px; background: url(images/input-field.png) no-repeat 0 0; overflow: hidden; margin-bottom: 21px; }
+#signup .field { color: #d1d4d7; border: 0; background: transparent; padding: 8px 13px 9px 49px; width: 400px; font-size: 16px; }
+#signup .signup-button { width: 93px; display: block; cursor: pointer; text-align: center; background: url(images/signup-button.png) no-repeat 0 0; overflow: hidden; border: 0; font-size: 14px; color: #fff; padding: 6px 0 9px; height: 33px; }
+#signup .signup-button:hover { color: #424e5a; }
+
+#main { border-left: solid 1px #55606b; float: right; display: inline; width: 290px; padding: 57px 74px 30px 21px; }
+
+.post { color: #a5aab0; padding-bottom: 26px; }
+.post h3 { color: #90c70c; padding-bottom: 14px; }

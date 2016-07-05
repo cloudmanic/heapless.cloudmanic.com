@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<head>
+	<title>Heapless Style Guide</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="css/images/favicon.ico" />
+	<link rel="stylesheet" href="css/guide.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/theme.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/colorbox.css" type="text/css" media="all" />
+	<script src="js/jquery.1.7.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.colorbox.min.js" type="text/javascript"></script>
+	<script src="js/theme.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="style-guide-section">
+		<div class="general">
+			<h1 class="style-guide-title"><span>General Notes</span></h1>
+
+			<div class="browsers">
+				<p class="th-pd-b-30">Because we are forward thinkers looking to the future, we target the latest browsers including:</p>
+
+				<ul class="th-mg-b-30">
+					<li><img src="css/images/chrome.png" alt="" /> Latest Google Chrome</li>
+					<li><img src="css/images/firefox.png" alt="" /> Firefox 4+</li>
+					<li><img src="css/images/opera.png" alt="" /> Opera 11</li>
+					<li><img src="css/images/safari.png" alt="" /> Latest Safari</li>
+					<li><img src="css/images/internetexplorer.png" alt="" /> Internet Explorer 9+</li>
+				</ul>
+			</div>
+
+			<div class="th-sep-v th-mg-b-30"></div>
+
+			<div class="modals">
+				<p class="th-pd-b-20">All modal windows should be built using <a href="http://jacklmoore.com/colorbox" target="_blank">http://jacklmoore.com/colorbox</a> (colorbox). This is our preferred solution.</p>
+				<img src="css/images/colorbox.jpg" alt="" class="th-mg-b-35" />
+			</div>
+		</div>
+
+
+		<h1 class="style-guide-title"><span>Typography</span></h1>
+
+		<p class="typ-info th-right">Helvetica Bold, 24pt, #424E5A</p>
+		<h1 class="th-h1 th-mg-b-10">Header 1</h1>
+
+		<p class="typ-info th-right">Helvetica Bold, 18pt, #424E5A</p>
+		<h2 class="th-h2 th-mg-b-15">Header 2</h2>
+
+		<p class="typ-info th-right">Helvetica Bold, 16pt, #424E5A</p>
+		<h3 class="th-h3 th-mg-b-15">Header 3</h3>
+
+		<p class="typ-info th-right">Helvetica Regular, 14pt, #424E5A</p>
+		<h4 class="th-h4 th-mg-b-20">Header 4</h4>
+
+		<p class="typ-info th-right">Helvetica Regular, 12pt, #59676D</p>
+		<p class="th-p th-mg-b-35">Paragraph style</p>
+
+		<div class="th-sep-v th-mg-b-20"></div>
+
+		<div class="th-cl">
+			<div class="col-list th-left">
+				<p class="th-p th-mg-b-10">Unordered list:</p>
+				<ul class="th-ul th-mg-b-40 th-pd-l-20">
+					<li>There are many variations of passages of Lorem Ipsum</li>
+					<li>Contrary to popular belief</li>
+					<li>This book is a treatise on the theory of ethics</li>
+				</ul>
+			</div>
+
+			<div class="col-list th-mg-l-30 th-left">
+				<p class="th-p th-mg-b-10">Ordered list:</p>
+				<ol class="th-ol th-mg-b-40 th-pd-l-30">
+					<li>There are many variations of passages of Lorem Ipsum</li>
+					<li>Contrary to popular belief</li>
+					<li>This book is a treatise on the theory of ethics</li>
+				</ol>
+			</div>
+
+			<div class="list-info th-right">
+				<p class="typ-info th-mg-b-10">Helvetica Regular, 12pt, #59676D</p>
+
+				<ul class="props th-right th-wid-150">
+					<li><span class="th-right">20px</span> <strong>Padding:</strong></li>
+					<li><span class="th-right">18px</span> <strong>Line height:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="style-guide-title"><span>Hyperlinks</span></h1>
+
+		<div class="th-cl">
+			<div class="one-third th-left">
+				<p class="th-p th-mg-b-20"><a href="#">Hyperlink Normal State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#0B92C0</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-left th-mg-l-40">
+				<p class="th-p th-mg-b-20"><a href="#" class="demo-hover">Hyperlink Hover State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#0B92C0</span> <strong>Color:</strong></li>
+					<li><span class="th-right">underline</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-right">
+				<p class="th-p th-mg-b-20"><a href="#" class="demo-visited">Hyperlink Visited State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#0B92C0</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="th-sep-v th-mg-t-30 th-mg-b-30"></div>
+
+		<div class="th-cl">
+			<div class="one-third th-left">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-grey-link">Hyperlink Normal State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-left th-mg-l-40">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-grey-link demo-hover">Hyperlink Hover State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">underline</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-right">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-grey-link demo-visited">Hyperlink Visited State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="th-sep-v th-mg-t-30 th-mg-b-30"></div>
+
+		<div class="th-cl th-mg-b-40">
+			<div class="one-third th-left">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-blue-bg-link">Hyperlink Normal State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-left th-mg-l-40">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-blue-bg-link demo-hover">Hyperlink Hover State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+					<li><span class="th-right">#F0F9FE</span> <strong>Background color:</strong></li>
+					<li><span class="th-right">5px</span> <strong>Padding:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-right">
+				<p class="th-p th-mg-b-20"><a href="#" class="th-blue-bg-link demo-visited">Hyperlink Visited State</a></p>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#59676D</span> <strong>Color:</strong></li>
+					<li><span class="th-right">none</span> <strong>Text decoration:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="style-guide-title"><span>Rounded Corners</span></h1>
+
+		<div class="th-cl th-mg-b-40">
+			<div class="one-third th-left">
+				<div class="demo-square th-round-4 th-mg-b-10">4px</div>
+
+				<ul class="props">
+					<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+					<li><span class="th-right">#A1A1A1</span> <strong>Stroke:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-left th-mg-l-40">
+				<div class="demo-square th-round-10 th-mg-b-10">10px</div>
+
+				<ul class="props">
+					<li><span class="th-right">10px radius</span> <strong>Rounded corner:</strong></li>
+					<li><span class="th-right">#A1A1A1</span> <strong>Stroke:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-right">
+				<div class="demo-square th-round-20 th-mg-b-10">20px</div>
+
+				<ul class="props">
+					<li><span class="th-right">20px radius</span> <strong>Rounded corner:</strong></li>
+					<li><span class="th-right">#A1A1A1</span> <strong>Stroke:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="style-guide-title"><span>Spinners</span></h1>
+
+		<div class="th-cl th-mg-b-30">
+			<div class="one-third th-left">
+				<div class="sp-top">
+					<p class="th-spinner th-mg-b-20">Spinner caption</p>
+				</div>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 11pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#0B29C0</span> <strong>Color:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-left th-mg-l-40">
+				<div class="sp-top">
+					<div class="th-thumb-placeholder th-mg-b-20">
+						<p class="th-spinner">Loading thumbnail</p>
+					</div>
+				</div>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 11pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">##0B29C0</span> <strong>Color:</strong></li>
+				</ul>
+			</div>
+
+			<div class="one-third th-right">
+				<div class="sp-top">
+					<a href="#" class="th-button th-spinner th-round-20 th-mg-b-20"><span>Please wait...</span></a>
+				</div>
+
+				<ul class="props">
+					<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+					<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="style-guide-title"><span>Form</span></h1>
+
+		<form action="#" method="post">
+			<div class="th-cl th-mg-b-30">
+				<div class="one-third th-left">
+					<div class="th-field-row th-mg-b-35 th-wid-250">
+						<label class="th-field-head">Input field</label>
+						<input type="text" class="th-field" value="" />
+						<span class="th-helper">(Helper text if necessary)</span>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Heading Text</h4>
+					<ul class="props th-mg-b-30">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Heading text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Heading text color:</strong></li>
+						<li><span class="th-right">8px</span> <strong>Heading padding:</strong></li>
+					</ul>
+
+					<h4>Helper Text</h4>
+					<ul class="props th-mg-b-30">
+						<li><span class="th-right">Helvetica Regular, 11pt</span> <strong>Helper text:</strong></li>
+						<li><span class="th-right">#ADADAD</span> <strong>Helper text color:</strong></li>
+						<li><span class="th-right">5px</span> <strong>Helper text padding:</strong></li>
+					</ul>
+
+					<h4>Input field</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#FFFFFF</span> <strong>Background:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="one-third th-left th-mg-l-40">
+					<div class="th-field-row th-mg-b-35 th-wid-250 focused">
+						<label class="th-field-head">Selected field</label>
+						<input type="text" class="th-field" value="" />
+						<span class="th-helper">(Helper text if necessary)</span>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Input Field Text</h4>
+					<ul class="props th-mg-b-30">
+						<li><span class="th-right">Helvetica Regular, 14pt</span> <strong>Input text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Input text color:</strong></li>
+						<li><span class="th-right">10px</span> <strong>Input  padding:</strong></li>
+					</ul>
+
+					<h4>Input field</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#F4F6F7</span> <strong>Background:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="one-third th-right">
+					<div class="th-field-row th-error th-mg-b-50 th-wid-250">
+						<label class="th-field-head">Input error</label>
+						<input type="text" class="th-field" value="" />
+						<span class="th-helper">(Helper text if necessary)</span>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Error Message Box</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#EA1B22</span> <strong>Background:</strong></li>
+						<li><span class="th-right">2px solid #EA1B22</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Error text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Error text: Color:</strong></li>
+					</ul>
+
+					<h4>Input field</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#FFFFFF</span> <strong>Background:</strong></li>
+						<li><span class="th-right">2px solid #EA1B22</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+			</div>
+
+			<span class="th-sep-v th-mg-b-30"></span>
+
+			<div class="th-cl th-mg-b-30">
+				<div class="one-third th-left">
+					<div class="th-field-row th-mg-b-45 th-wid-250">
+						<label class="th-field-head">Textarea</label>
+						<textarea class="th-field th-hei-80"></textarea>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Heading Text</h4>
+					<ul class="props th-mg-b-30">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Heading text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Heading text color:</strong></li>
+						<li><span class="th-right">8px</span> <strong>Heading padding:</strong></li>
+					</ul>
+
+					<h4>Textarea</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#FFFFFF</span> <strong>Background:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="one-third th-left th-mg-l-40">
+					<div class="th-field-row focused th-mg-b-45 th-wid-250">
+						<label class="th-field-head">Textarea Selected</label>
+						<textarea class="th-field th-hei-80"></textarea>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Input Field Text</h4>
+					<ul class="props th-mg-b-30">
+						<li><span class="th-right">Helvetica Regular, 14pt</span> <strong>Input text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Input text color:</strong></li>
+						<li><span class="th-right">10px</span> <strong>Input  padding:</strong></li>
+					</ul>
+
+					<h4>Textarea</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#F4F6F7</span> <strong>Background:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="one-third th-right">
+					<div class="th-field-row th-error th-mg-b-40 th-wid-250">
+						<label class="th-field-head">Textarea Error state</label>
+						<textarea class="th-field th-hei-80"></textarea>
+
+						<p class="th-tooltip"><strong>Required</strong> Error message below field</p>
+					</div>
+
+					<h4>Error Message Box</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#EA1B22</span> <strong>Background:</strong></li>
+						<li><span class="th-right">2px solid #EA1B22</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Error text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Error text: Color:</strong></li>
+					</ul>
+
+					<h4>Textarea</h4>
+					<ul class="props th-mg-b-20">
+						<li><span class="th-right">#FFFFFF</span> <strong>Background:</strong></li>
+						<li><span class="th-right">2px solid #EA1B22</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner Shadow:</strong></li>
+					</ul>
+				</div>
+			</div>
+			
+			<span class="th-sep-v th-mg-b-30"></span>
+			
+			<p class="typ-info centered th-mg-b-40">Radio buttons should be build with HTML + CSS, not Javascript + jQuery. Delegation in older browser is fine.</p>
+			
+			<div class="th-cl">
+				<div class="half th-left">
+					<label class="th-checklabel th-wid-250 th-mg-b-50"><input type="radio" class="th-radio" value="1" name="demo-radio" /> Radio button normal state</label>
+
+					<h4>Label</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Color:</strong></li>
+					</ul>
+
+					<h4>Radio Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">15px</span> <strong>Diameter:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="half th-right">
+					<label class="th-checklabel th-wid-250 th-mg-b-40"><input type="radio" class="th-radio" value="2" checked="checked" name="demo-radio" /> Radio button selected state</label>
+
+					<h4>Label</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Color:</strong></li>
+					</ul>
+
+					<h4>Radio Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">15px</span> <strong>Diameter:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner shadow:</strong></li>
+						<li><span class="th-right">8px</span> <strong>Green dot diameter:</strong></li>
+						<li><span class="th-right">#93CA0F</span> <strong>Green dot background:</strong></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="th-sep-v th-mg-b-30"></div>
+
+			<p class="typ-info centered th-mg-b-40">Checkboxes should be build with HTML + CSS, not Javascript + jQuery. Delegation in older browser is fine.</p>
+			
+			<div class="th-cl">
+				<div class="half th-left">
+					<label class="th-checklabel th-wid-250 th-mg-b-40"><input type="checkbox" class="th-checkbox" value="" /> Checkbox normal state</label>
+
+					<h4>Label</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Color:</strong></li>
+					</ul>
+
+					<h4>Checkbox</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">15px x 15px</span> <strong>Diameter:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounder corner:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="half th-right">
+					<label class="th-checklabel th-wid-250 th-mg-b-40"><input type="checkbox" class="th-checkbox" checked="checked" value="" /> Checkbox selected state</label>
+
+					<h4>Label</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Bold, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#424E5A</span> <strong>Color:</strong></li>
+					</ul>
+
+					<h4>Checkbox</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">15px x 15px</span> <strong>Diameter:</strong></li>
+						<li><span class="th-right">4px radius</span> <strong>Rounder corner:</strong></li>
+						<li><span class="th-right">1px solid #A1A1A1</span> <strong>Stroke:</strong></li>
+						<li><span class="th-right">#AAAAAA, 90 degrees</span> <strong>Inner shadow:</strong></li>
+						<li><span class="th-right">Lucida Grande Regular, 18pt, #93CA0F</span> <strong>Checkmark:</strong></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="th-sep-v th-mg-b-30"></div>
+			
+			
+			<p class="typ-info centered th-mg-b-40">Buttons should be build with CSS3 (no background images) -- they should expand in width based on the text. Delegation in older browser is fine.</p>
+			
+			<div class="th-cl th-mg-b-50">
+				<div class="half th-left">
+					<input type="submit" class="th-button th-round-20 th-mg-b-40 th-wid-125" value="Button" />
+
+					<h4>Default Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">15px 25px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Medium Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">10px 20px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Small Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">5px 10px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">#036DA6 to #11A9DF</span> <strong>Background gradient:</strong></li>
+						<li><span class="th-right">20px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 120 degrees</span> <strong>Drop shadow:</strong></li>
+					</ul>
+				</div>
+
+				<div class="half th-right">
+					<input type="submit" class="th-button th-round-20 demo-hover th-mg-b-40 th-125" value="Button Hover" />
+
+					<h4>Default Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 14pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">15px 25px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Medium Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">10px 20px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Small Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">Helvetica Regular, 12pt</span> <strong>Text:</strong></li>
+						<li><span class="th-right">#FFFFFF</span> <strong>Color:</strong></li>
+						<li><span class="th-right">5px 10px</span> <strong>Padding:</strong></li>
+					</ul>
+
+					<h4>Button</h4>
+					<ul class="props th-mg-b-25">
+						<li><span class="th-right">#0996C3 to #33C9E2</span> <strong>Background gradient:</strong></li>
+						<li><span class="th-right">20px radius</span> <strong>Rounded corner:</strong></li>
+						<li><span class="th-right">#AAAAAA, 120 degrees</span> <strong>Drop shadow:</strong></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

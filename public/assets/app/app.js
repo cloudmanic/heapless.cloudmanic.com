@@ -1,0 +1,29 @@
+var controllers = {}
+var sync_worker = null;
+
+var site = {
+	config: {},
+	sync: {},
+	state: { first_synced: false }	
+}
+
+var app = angular.module('app', [ 
+	'ngRoute',
+	'ngAnimate',
+	'angularFileUpload',
+	'pdfthumb',
+	'pdflist'
+]);
+
+// Config Location Providers
+app.config(['$locationProvider', function ($locationProvider) { 
+	$locationProvider.html5Mode(true); 
+}]);
+
+//
+// Sanitize images and hrefs for local storage.
+//
+app.config([ '$compileProvider', function($compileProvider) {
+	$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|filesystem|file|ftp|mailto|chrome-extension):/);
+	$compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|data:?|filesystem|file|ftp|mailto|chrome-extension):/);
+}]);

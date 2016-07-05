@@ -1,0 +1,55 @@
+{
+	"name": "cloudmanic/heapless.cloudmanic.com",
+	"version": "1.0.0",
+	
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:cloudmanic/app-system-php.git"
+		}	
+	],
+	
+	"require": {
+		"laravel/framework": "4.2.*",
+		"cloudmanic/applications-api-php": "dev-master",
+		"cloudmanic/app-system-php": "dev-master",
+		"cloudmanic/evernote-php": "dev-master",		
+		"hisorange/browser-detect": "1.0.4",
+		"sybio/image-workshop": "dev-master",
+		"aws/aws-sdk-php": "2.*",
+		"guzzle/guzzle": "3.*"	
+	},
+	
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/api-v1",
+			"app/api-v1/connections",
+			"app/queue"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	
+	"config": {
+		"preferred-install": "source"
+	},
+	
+	"minimum-stability": "dev"
+}

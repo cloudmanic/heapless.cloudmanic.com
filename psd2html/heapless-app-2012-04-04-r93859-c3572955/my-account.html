@@ -1,0 +1,79 @@
+<!--#include virtual="ssi-header.shtml" -->
+		<nav class="top">
+			<form action="#" method="post" id="upload" class="th-left">
+				<span class="th-button th-round-20">Upload Now <input type="file" /></span>
+			</form>
+
+			<form action="#" method="post" id="search" class="th-right">
+				<input type="text" class="search-field" placeholder="Search your files" />
+				<input type="submit" class="search-button th-notext" value="Search" />
+			</form>
+		</nav>
+		<section id="main" class="th-cl">
+			<section id="sidebar" class="th-left">
+				<nav>
+					<a href="#"><span class="icon ico-heap"></span> The Heap <span class="red circle">22</span></a>
+					<a href="#"><span class="icon ico-processed"></span> Processed <span class="green circle">5</span></a>
+					<a href="#"><span class="icon ico-trash"></span> Trash <span class="grey circle">1</span></a>
+				</nav>
+
+				<div class="advertisement">
+					<h6>Advertisement</h6>
+					<div class="container">
+						<a href="#"><img src="css/images/advertisement.jpg" alt="" /></a>
+						<span class="ico-remove th-notext">Remove this ad</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="content" class="th-right">
+				<section class="my-account">
+					<h1 class="th-h1 th-mg-b-20">My Account</h1>
+
+					<form action="" method="post">
+						<div class="th-cl">
+							<div class="th-field-row th-mg-b-15 th-wid-225 th-left">
+								<label class="th-field-head th-pd-b-5">First Name</label>
+								<input type="text" class="th-field" value="" />
+							</div>
+							<div class="th-field-row th-mg-b-15 th-wid-225 th-right">
+								<label class="th-field-head th-pd-b-5">Last Name</label>
+								<input type="text" class="th-field" value="" />
+							</div>
+						</div>
+
+						<div class="th-field-row th-mg-b-15 th-wid-460">
+							<label class="th-field-head th-pd-b-5">Email</label>
+							<input type="email" class="th-field" value="" />
+
+							<div class="error-tooltip">
+								<span class="arrow"></span>
+								<strong>Error.</strong> Please double-check your email address.
+							</div>
+						</div>
+
+						<div class="th-field-row th-mg-b-15 th-wid-460">
+							<label class="th-field-head th-pd-b-5">New Password</label>
+							<input type="password" class="th-field" value="" />
+						</div>
+
+						<div class="th-field-row th-mg-b-25 th-wid-460">
+							<label class="th-field-head th-pd-b-5">Confirm Password</label>
+							<input type="password" class="th-field" value="" />
+							<span class="th-helper">Minimum 6 characters</span>
+						</div>
+
+						<div class="th-cl">
+							<a href="#" class="th-button th-round-20 th-left th-mg-r-15" onclick="my_account_demo(); return false;">Change</a>
+							<a href="#" class="l-cancel th-left">Cancel</a>
+						</div>
+
+						<div class="error-row">
+							<p>Whoops! Something goes wrong.</p>
+						</div>
+					</form>
+				</section>
+			</section>
+		</section>
+
+<!--#include virtual="ssi-footer.shtml" -->

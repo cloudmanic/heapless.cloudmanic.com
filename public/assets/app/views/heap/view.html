@@ -1,0 +1,28 @@
+<section class="file-viewer">
+  <a href="/heap/{{ back_display }}/{{ file.FilesStatus }}" class="l-back th-right">Back to The Heap</a>
+
+  <h2 ng-bind="file.FilesName"></h2>
+
+  <p class="file-options th-cl">
+  	<span class="th-left">Date Uploaded: <span ng-bind="file.FilesCreatedAt | dateToISO | date:'shortDate'"></span></span>
+  	<span class="th-left">File type: <span ng-bind="file.Type | uppercase"></span></span>
+  	<span class="th-left">Added by: <span ng-bind="file.UsersFirstName"></span> <span ng-bind="file.UsersLastName"></span></span>
+  	<span class="th-right">
+  		<a href="#" class="send-link th-left" data-id="{{ file.FilesId }}" ng-show="(file.FilesStatus == 'current')">Send the file to</a> 
+  		<!-- <a href="#" class="download-link">Download file</a>  -->
+  		<a href="#" class="ico-trash" ng-show="(file.FilesStatus == 'current')">Delete file</a>
+  	</span>
+  </p>
+
+  <div class="th-cl">
+  	<div class="">
+  		
+			<pdflist src="{{ file.Url }}" width="850" ng-if="(file.FilesType == 'application/pdf')"></pdflist>
+  	
+  		<div class="full" style="width: 850px;" ng-if="(file.FilesType != 'application/pdf')">
+  			<img ng-src="{{ file.Url }}" alt="{{ file.FilesName }}" width="850" img-load img-loader="img_loader" ng-hide="img_loader" ng-if="(file.FilesType != 'application/pdf')" />
+  		</div>
+  	</div>
+  </div>
+  
+</section>

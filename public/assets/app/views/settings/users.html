@@ -1,0 +1,56 @@
+<section class="settings">
+  <h1 class="th-h1 th-mg-b-15">Settings</h1>
+
+  <div ng-include="'/assets/app/views/settings/sub-nav.html'"></div>
+
+  <div class="users-list">
+  	<a href="#" class="l-add-user">Add a new person</a>
+
+  	<div class="add-user th-cl">
+  		<div class="th-left">
+  			<form action="" method="post">
+  				<h3 class="th-h3 th-mg-b-10">Add a new person</h3>
+
+  				<div class="th-cl th-mg-b-15">
+  					<div class="th-field-row th-wid-225 th-left">
+  						<label class="th-field-head th-pd-b-10">First Name</label>
+  						<input type="text" class="th-field" value="" />
+  					</div>
+
+  					<div class="th-field-row th-wid-225 th-right">
+  						<label class="th-field-head th-pd-b-10">Last Name</label>
+  						<input type="text" class="th-field" value="" />
+  					</div>
+  				</div>
+
+  				<div class="th-field-row th-wid-460 th-mg-b-20">
+  					<label class="th-field-head th-pd-b-10">Email</label>
+  					<input type="email" class="th-field" value="" />
+  				</div>
+
+  				<a href="#" class="th-button th-mg-r-10 th-round-20 th-left" onclick="user_error(); return false;">Add this person</a>
+  				<a href="#" class="l-cancel th-left">or Cancel</a>
+  				<div class="th-cl"></div>
+
+  				<div class="error-row">
+  					<p><strong>ERROR:</strong> This email is already registered, please choose another one.</p>
+  				</div>
+  			</form>
+  		</div>
+  		<div class="th-right">
+  			<h3 class="th-h3 th-mg-b-20">Sample welcome email</h3>
+  			<p class="th-p th-mg-b-10">As soon as you submit this form, this person will receive a welcome email with a temporary password and a link to login.</p>
+
+  			<div class="email-example"></div>
+  		</div>
+  	</div>
+
+  	<ul>
+  		<li>
+  			<p class="name th-left">Dirman Suharno</p>
+  			<span class="email th-left">dirman@harnods.info</span>
+  			<span class="role th-left">Owner</span>
+  		</li>
+  	</ul>
+  </div>
+</section>
